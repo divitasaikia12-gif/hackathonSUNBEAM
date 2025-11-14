@@ -5,7 +5,7 @@ const cors = require('cors')
 const authorization = require('./routes/authorization')
 // const bookingRouter = require('./routes/booking')
 // const categoryRouter = require('./routes/category')
-// const propertyRouter = require('./routes/property')
+const movieRouter = require('./routes/movies')
 // const reviewRouter = require('./routes/review')
 const userRouter = require('./routes/user')
 
@@ -20,7 +20,7 @@ app.use(authorization)
 
 // app.use('/booking', bookingRouter)
 // app.use('/category', categoryRouter)
-// app.use('/property', propertyRouter)
+//app.use('/movies', movieRouter)
 // app.use('/review', reviewRouter)
 app.use('/user', userRouter)
 
