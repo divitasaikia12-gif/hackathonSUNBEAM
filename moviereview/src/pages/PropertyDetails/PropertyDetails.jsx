@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
-import { getPropertyDetails } from '../../services/properties'
+import { getPropertyDetails } from '../../services/movies'
 import { toast } from 'react-toastify'
 import { config } from '../../services/config'
 import './PropertyDetails.css'
