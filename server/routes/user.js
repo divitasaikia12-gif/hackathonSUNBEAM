@@ -43,14 +43,14 @@ router.post('/login', (req, res) => {
   })
 })
 
-router.get('/profile', (req, res) => {
+router.get('/about-us', (req, res) => {
   const sql = `SELECT first_name, last_name, mobile, email, birth FROM users WHERE user_id = ?`
   pool.query(sql, [req.headers.user_id], (error, data) => {
     res.send(result.createResult(error, data))
   })
 })
 
-router.put('/profile', (req, res) => {
+router.put('/about-us', (req, res) => {
   const { first_name, last_name, email, mobile, birth } = req.body
   const sql = `UPDATE users SET first_name=?, last_name=?, email=?, mobile=?, birth=? WHERE id = ?`
   pool.query(
