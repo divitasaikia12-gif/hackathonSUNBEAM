@@ -60,11 +60,11 @@ function App() {
                 element={<Cart />}
               />
               <Route
-                path='about-us'
+                path='editprofile'
                 element={<AboutUs />}
               />
               <Route
-                path='contact-us'
+                path='changepassword'
                 element={<ContactUs />}
               />
               <Route

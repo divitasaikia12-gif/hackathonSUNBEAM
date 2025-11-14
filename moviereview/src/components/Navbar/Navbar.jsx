@@ -92,7 +92,7 @@ function Navbar() {
               <Link
                 className='nav-link'
                 aria-current='page'
-                to='/home/about-us'
+                to='/home/editprofile'
               >
                 Edit Profile
               </Link>
@@ -101,7 +101,7 @@ function Navbar() {
               <Link
                 className='nav-link'
                 aria-current='page'
-                to='/home/contact-us'
+                to='/home/changepassword'
               >
                 Change Password
               </Link>

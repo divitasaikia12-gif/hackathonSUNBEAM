@@ -1,10 +1,10 @@
 import axios from 'axios'
 import { config } from './config'
 
-export async function getProperties() {
+export async function getMovies() {
   try {
     // create url
-    const url = `${config.server}/property`
+    const url = `${config.server}/movies`
 
     // create headers with require token
     // send GET request and get the response
@@ -21,44 +21,44 @@ export async function getProperties() {
   }
 }
 
-export async function getPropertyDetails(id) {
-  try {
-    // create url
-    const url = `${config.server}/property/details/${id}`
+// export async function getPropertyDetails(id) {
+//   try {
+//     // create url
+//     const url = `${config.server}/property/details/${id}`
 
-    // create headers with require token
-    // send GET request and get the response
-    const response = await axios.get(url, {
-      headers: {
-        token: localStorage.getItem('token'),
-      },
-    })
+//     // create headers with require token
+//     // send GET request and get the response
+//     const response = await axios.get(url, {
+//       headers: {
+//         token: localStorage.getItem('token'),
+//       },
+//     })
 
-    // return response body
-    return response.data
-  } catch (ex) {
-    console.log(`exception: `, ex)
-  }
-}
+//     // return response body
+//     return response.data
+//   } catch (ex) {
+//     console.log(`exception: `, ex)
+//   }
+// }
 
-export async function deleteProperty(id) {
-  try {
-    // create url
-    const url = `${config.server}/property/${id}`
+// export async function deleteProperty(id) {
+//   try {
+//     // create url
+//     const url = `${config.server}/property/${id}`
 
-    // create headers with require token
-    const response = await axios.delete(url, {
-      headers: {
-        token: localStorage.getItem('token'),
-      },
-    })
+//     // create headers with require token
+//     const response = await axios.delete(url, {
+//       headers: {
+//         token: localStorage.getItem('token'),
+//       },
+//     })
 
-    // return response body
-    return response.data
-  } catch (ex) {
-    console.log(`exception: `, ex)
-  }
-}
+//     // return response body
+//     return response.data
+//   } catch (ex) {
+//     console.log(`exception: `, ex)
+//   }
+// }
 
 export async function addProperty(
   categoryId,
