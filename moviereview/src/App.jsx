@@ -6,10 +6,10 @@ import Register from './pages/Register/Register'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import PropertyListing from './pages/movies/movies'
 import PropertyDetails from './pages/PropertyDetails/PropertyDetails'
-import AddProperty from './pages/AddProperty/AddProperty'
+import AddProperty from './pages/MyReview/MyReview'
 import AboutUs from './pages/EditProfile/EditProfile'
 import ContactUs from './pages/ChangePass/ChangePass'
-import Bookings from './pages/Bookings/Bookings'
+import Bookings from './pages/AllReviews/allreviews'
 import Cart from './pages/SharedReview/SharedReview'
 import Home from './pages/Home/Home'
 import AuthProvider from './providers/AuthProvider'
@@ -52,11 +52,11 @@ function App() {
                 element={<PropertyDetails />}
               />
               <Route
-                path='add-property'
+                path='myreview'
                 element={<AddProperty />}
               />
               <Route
-                path='cart'
+                path='sharedwithme'
                 element={<Cart />}
               />
               <Route
@@ -68,7 +68,7 @@ function App() {
                 element={<ContactUs />}
               />
               <Route
-                path='bookings'
+                path='allreviews'
                 element={<Bookings />}
               />
             </Route>

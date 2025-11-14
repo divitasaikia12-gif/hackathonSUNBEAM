@@ -48,7 +48,7 @@ function Navbar() {
               <Link
                 className='nav-link'
                 aria-current='page'
-                to='/home/properties'
+                to='/home/movies'
               >
                 All Movies
               </Link>
@@ -57,7 +57,7 @@ function Navbar() {
               <Link
                 className='nav-link'
                 aria-current='page'
-                to='/home/add-property'
+                to='/home/myreview'
               >
                 My Reviews
               </Link>
@@ -66,7 +66,7 @@ function Navbar() {
               <Link
                 className='nav-link'
                 aria-current='page'
-                to='/home/cart'
+                to='/home/sharedwithme'
               >
                 Shared With Me
               </Link>
@@ -75,7 +75,7 @@ function Navbar() {
               <Link
                 className='nav-link'
                 aria-current='page'
-                to='/home/bookings'
+                to='/home/allreviews'
               >
                 All Reviews
               </Link>
