@@ -76,6 +76,7 @@ router.get('/', (req, res) => {
 //const multer = require('multer')
 //const upload = multer({ dest: 'images' })
 
+//hello
 // router.post('/', (req, res) => {
 //   const {
 //     categoryId,
