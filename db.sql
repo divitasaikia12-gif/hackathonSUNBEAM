@@ -43,3 +43,14 @@ CREATE TABLE shares(
 
 --insert
 
+INSERT INTO movies (id, title, release_date) VALUES
+(1,'The Shawshank Redemption', '1995-02-17'),
+(2,'Pulp Fiction', '1994-10-14'),
+(3,'Inception', '2010-07-16'),
+(4,'The Matrix', '1999-03-31'),
+(5,'Spirited Away', '2003-09-12'),
+(6,'The Dark Knight', '2008-07-18'),
+(7,'Parasite', '2019-10-11'),
+(8,'Interstellar', '2014-11-07'),
+(9,'Avatar', '2009-12-17'),
+(10,'Joker', '2019-10-04');
