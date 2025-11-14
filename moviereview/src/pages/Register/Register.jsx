@@ -40,7 +40,8 @@ function Register() {
         lastName,
         email,
         password,
-        phone
+        phone,
+        date
       )
       if (response['status'] === 'success') {
         toast.success('Successfully registered user')
