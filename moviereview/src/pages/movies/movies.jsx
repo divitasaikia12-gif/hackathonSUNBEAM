@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { deleteProperty, getProperties } from '../../services/properties'
-import './PropertyListing.css'
+import { deleteProperty, getProperties } from '../../services/movies'
+import './movies.css'
 import { toast } from 'react-toastify'
 import TablePropertiesListing from '../../components/TablePropertiesListing/TablePropertiesListing'
 import GridPropertiesListing from '../../components/GridPropetiesListing/GridPropertiesListing'

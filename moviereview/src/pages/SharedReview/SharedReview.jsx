@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import TablePropertiesListing from '../../components/TablePropertiesListing/TablePropertiesListing'
 import { removeFromCart, emptyCart } from '../../features/cartSlice'
 import './Cart.css'
-import { bookProperties } from '../../services/bookings'
+import { bookProperties } from '../../services/reviews'
 import { toast } from 'react-toastify'
 
 function Cart() {

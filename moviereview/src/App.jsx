@@ -4,13 +4,13 @@ import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
 
 import { Navigate, Route, Routes } from 'react-router-dom'
-import PropertyListing from './pages/PropertyListing/PropertyListing'
+import PropertyListing from './pages/movies/movies'
 import PropertyDetails from './pages/PropertyDetails/PropertyDetails'
 import AddProperty from './pages/AddProperty/AddProperty'
-import AboutUs from './pages/AboutUs/AboutUs'
-import ContactUs from './pages/ContactUs/ContactUs'
+import AboutUs from './pages/EditProfile/EditProfile'
+import ContactUs from './pages/ChangePass/ChangePass'
 import Bookings from './pages/Bookings/Bookings'
-import Cart from './pages/Cart/Cart'
+import Cart from './pages/SharedReview/SharedReview'
 import Home from './pages/Home/Home'
 import AuthProvider from './providers/AuthProvider'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
@@ -44,7 +44,7 @@ function App() {
               }
             >
               <Route
-                path='properties'
+                path='movies'
                 element={<PropertyListing />}
               />
               <Route

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { deleteProperty, getProperties } from '../../services/properties'
+import { deleteProperty, getProperties } from '../../services/movies'
 import './MyReviews.css'
 import { toast } from 'react-toastify'
 import TablePropertiesListing from '../../components/TablePropertiesListing/TablePropertiesListing'
